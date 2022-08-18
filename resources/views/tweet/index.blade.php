@@ -14,6 +14,7 @@
 </head>
 <body>
     <h1>つぶやきアプリ</h1>
+    @auth
     <div>
         <p>投稿フォーム</p>
         @if(session('feedback.success'))
@@ -30,6 +31,7 @@
             <button type="submit">投稿</button>
         </form>
     </div>
+    @endauth
     <div>
         @foreach ($tweets as $tweet)
         <details>
