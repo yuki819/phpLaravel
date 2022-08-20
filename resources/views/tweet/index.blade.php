@@ -1,4 +1,4 @@
-<!doctype html>
+<!--<!doctype html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -52,4 +52,12 @@
         @endforeach
     </div>
 </body>
-</html>
+</html>-->
+<x-layout title="TOP | つぶやきアプリ">
+    <x-layout.single>
+        <h2 class="text-center text-blue-500 text-4lx font-bold mt-8 mb-8">
+            つぶやきアプリ
+        </h2>
+        <x-tweet.form.post></x-tweet.form.post>
+    </x-layout.single>
+</x-layout>
