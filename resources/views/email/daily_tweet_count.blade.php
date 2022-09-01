@@ -1,14 +1,13 @@
 @component('mail::message')
-#新しいユーザが追加されました！
+
+# 昨日は{{ $count }}件のつぶやきが追加されました！
 
 {{ $toUser->name }}さんこんにちは！
 
-@component('mail::panel')
-    新しく{{ $newUser->name }}さんが参加しましたよ！    
-@endcomponent
+昨日は{{ $count }}件のつぶやきが追加されましたよ！最新のつぶやきを見に行きましょう。
 
 @component('mail::button', ['url' => 'http://localhost/tweet'])
     つぶやきを見に行く
 @endcomponent
-
+    
 @endcomponent
